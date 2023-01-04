@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.nav a{
+  display: block;
+  width: 20%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  color: rgb(116, 176, 228);
+  text-decoration: none;
+}
+.nav{
+  display: flex;
+  border-bottom:1px solid rgb(142, 147, 131) ;
+}
+.current{
+  background-color: rgb(150, 211, 189);
+  color: #fff !important;
+}
+.ooo{
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+.ooo div:nth-child(1){
+  width: 100%;
+  height: 100%;
+}
+.ooo img{
+  width: 100%;
+  height: 100%;
+}
+.oop{
+  float: left;
+  background-color: rgb(0, 0, 0);
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -200px;
+  opacity: 50%;
+  border-radius: 20px;
+}
+.oop p{
+  font-size: 40px;
+  color: rgb(242, 15, 30);
+  text-align: center;
+  line-height: 200px;
+}
+.introduce{
+  width: 90%;
+  height: 500px;
+  display: flex;
+  margin-left:5% ;
+  margin-top: 40px;
+  background-color: rgb(212, 205, 152);
+}
+.i_a{
+  height: 100%;
+  width: 30%;
+}
+.i_a img{
+  width: 100%;
+  height: 100%;
+}
+.nl{
+  text-align: center;
+  color: rgb(0, 0, 0);font-size: 20px;
+}
+.nl_nl{
+  margin-top: 30px;
+  width: 30%;
+}
+.i_b{
+  width: 35%;
+  height: 100%;
+  position: relative;
+}
+.i_b p:nth-child(1){
+  color: aquamarine;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 40px;
+}
+.i_b p:nth-child(2){
+  color:#fff;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 40px;
+}
+.price{
+  width: 90%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin-left:5% ;
+  margin-top: 40px;
+  background-color: rgb(212, 205, 152);
+}
+.price_ww p{
+  text-align: center;
+  line-height: 50px;
+}
+.price_c img{
+  width: 100%;
+  height: 100%;
+}
+.price_q{
+  border: 5px solid rgb(188, 30, 30);
+  border-radius: 20px;
+  height: 300px;
+  width: 200px;
+  margin-top: 100px;
+  margin-right: 100px;
+}
+.price_q p{
+  text-indent: 2em;
+  margin-top: 40px;
+  color: rgb(221, 70, 116);
+  font-size: 20px;
+}
+.last{
+  width: 90%;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left:5% ;
+  margin-top: 40px;
+  background-color: rgb(212, 205, 152);
+}
+.last_a{
+  height: 100%;
+  width: 40%;
+}
+.last_a img{
+  width: 100%;
+  height: 100%;
+}
+.last_p{
+  margin-left: 50px;
+}
+.last_p p{
+  margin-left: 220px;
+}

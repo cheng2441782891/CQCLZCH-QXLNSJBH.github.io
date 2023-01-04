@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>足球</title>
+  <script  src="./js/echarts.js"></script>
+  <script  type="text/javascript" src="./js/index.js"></script>
+</head>
+<body>
+  <!-- 第三部分 -->
+  <div class="price" style="overflow: hidden;">
+    <div class="price_ww" style="width: 50%;position: relative;">
+      <p>当前球星身价(万欧元)</p>
+      <div id="main" style="width: 100%;height:30rem"></div>
+      <p>球星身价柱状图</p>
+      <div class="price_q" style=" position: absolute; top: 20px;right: 20px;overflow: hidden;margin: 0;padding: 0;border: none;">
+        <p>当前球星身价最高为C罗两亿欧元，其次为内马尔7500万欧元，之后是迪玛利亚5500万欧元，然后梅西5000万欧元，贝尔2800万欧元，莫德里奇1000万欧元。</p>
+      </div>
+    </div>
+    <div class="price_c" >
+      <img src="./images/微信图片_20230103142541.png" alt="">
+    </div>
+    <div class="price_c" >
+      <img src="./images/微信图片_20230103142554.png" alt="">
+
+    </div>
+
+  </div>
+  <script>
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+  option = {
+    legend: {
+      data: ['年薪']
+    },
+      xAxis: {
+        data: ['梅西', 'C罗', '内马尔', '迪玛利亚', '贝尔', '莫德里奇']
+      },
+      yAxis: {},
+      series: [
+        {
+          type: 'bar',
+          data: [5000, 20000, 7500, 5500, 2800, 1000]
+        }
+      ]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+  </script>
+</body>
+</html>
